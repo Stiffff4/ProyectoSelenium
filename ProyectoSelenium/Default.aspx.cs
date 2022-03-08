@@ -11,7 +11,11 @@ namespace ProyectoSelenium
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+        }
+        protected void boton_Click(object sender, EventArgs e)
+        {
+            label.Visible = true;
         }
     }
 }
