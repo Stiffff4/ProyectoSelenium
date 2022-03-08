@@ -60,6 +60,24 @@ namespace ProyectoSelenium
         protected global::System.Web.UI.WebControls.RadioButton paypal;
 
         /// <summary>
+        /// Control usado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox usado;
+
+        /// <summary>
+        /// Control nuevo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox nuevo;
+
+        /// <summary>
         /// Control boton.
         /// </summary>
         /// <remarks>

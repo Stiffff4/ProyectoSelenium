@@ -4,7 +4,7 @@
         <h2>Formulario automatizado con Selenium</h2>
         <div>
           <h3>Celulares:</h3>
-          <asp:DropDownList name="celulares" id="celulares" runat="server">
+          <asp:DropDownList name="celulares" id="celulares" runat="server" CssClass="form-control">
             <asp:ListItem value="samsung" Text="Samsung"></asp:ListItem>
             <asp:ListItem value="apple" Text="Apple"></asp:ListItem>
             <asp:ListItem value="huawei" Text="Huawei"></asp:ListItem>
@@ -15,19 +15,27 @@
         </div>
         <div>
             <h3>Cantidad:</h3>
-            <asp:TextBox type="number" name="cantidad" id="cantidad" runat="server"/>
+            <asp:TextBox CssClass="form-control" type="number" name="cantidad" id="cantidad" runat="server"/>
         </div>
         <div>
             <h3>Método de pago:</h3>
             <asp:RadioButton GroupName="pago" name="pago" value="efectivo" id="efectivo" runat="server"/>
-             <label>Efectivo</label>
+            <label class="form-label">Efectivo</label>
             <br />
             <asp:RadioButton GroupName="pago" name="pago" value="tarjeta" id="tarjeta" runat="server"/>
-            <label>Tarjeta de crédito</label>
+            <label class="form-label">Tarjeta de crédito</label>
             <br />
             <asp:RadioButton GroupName="pago" name="pago" value="paypal" id="paypal" runat="server"/>
-            <label>PayPal</label>
+            <label class="form-label">PayPal</label>
         </div>
+    <div>
+        <h3>Condición:</h3>
+        <asp:CheckBox runat="server" name="usado" ID="usado"/>
+        <label class="form-label">Usado</label>
+        <br />
+        <asp:CheckBox runat="server" name="nuevo" ID="nuevo"/>
+        <label class="form-label">Nuevo</label>
+    </div>
     <br />
         <div>
             <asp:Button runat="server" name="boton" ID="boton" Text="Pagar" OnClick="boton_Click" CssClass="btn btn-primary"/>
